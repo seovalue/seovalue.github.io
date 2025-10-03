@@ -1,0 +1,23 @@
+{
+  "name": "seovalue-resume",
+  "version": "1.0.0",
+  "description": "Jekyll-based resume website for GitHub Pages",
+  "scripts": {
+    "install": "bundle install",
+    "dev": "bundle exec jekyll serve --livereload",
+    "build": "bundle exec jekyll build",
+    "clean": "bundle exec jekyll clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seovalue/seovalue.github.io.git"
+  },
+  "keywords": [
+    "jekyll",
+    "resume",
+    "github-pages",
+    "portfolio"
+  ],
+  "author": "seovalue",
+  "license": "MIT"
+}

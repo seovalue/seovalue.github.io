@@ -1,0 +1,93 @@
+---
+layout: default
+---
+
+<!-- Header Section -->
+<header class="header">
+    <h1>{{ site.name }}</h1>
+    <p class="title">{{ site.title_position }}</p>
+    
+    <div class="contact-info">
+        <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>{{ site.location }}</span>
+        </div>
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </div>
+        <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/{{ site.github }}" target="_blank">{{ site.github }}</a>
+        </div>
+        {% if site.linkedin %}
+        <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/{{ site.linkedin }}" target="_blank">LinkedIn</a>
+        </div>
+        {% endif %}
+        {% if site.website %}
+        <div class="contact-item">
+            <i class="fas fa-globe"></i>
+            <a href="{{ site.website }}" target="_blank">Website</a>
+        </div>
+        {% endif %}
+    </div>
+</header>
+
+<!-- Main Content -->
+<main class="content">
+    <!-- About Section -->
+    <section class="section" id="about">
+        <h2 class="section-title">소개</h2>
+        <div class="about-text">
+            {{ site.about | markdownify }}
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <h2 class="section-title">경력</h2>
+        {% for exp in site.experience %}
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="experience-company">{{ exp.company }}</div>
+                <div class="experience-duration">{{ exp.duration }}</div>
+            </div>
+            <div class="experience-description">
+                {{ exp.description | markdownify }}
+            </div>
+        </div>
+        {% endfor %}
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <h2 class="section-title">주요 프로젝트</h2>
+        {% assign sorted_projects = site.projects | sort: 'order' %}
+        {% for project in sorted_projects %}
+        <div class="project-item">
+            <div class="project-header">
+                <h3 class="project-title">{{ project.title }}</h3>
+                <div class="project-meta">
+                    <span class="project-company">{{ project.company }}</span>
+                    <span class="project-duration">{{ project.duration }}</span>
+                </div>
+                <p class="project-summary">{{ project.summary }}</p>
+                
+                {% if project.tech_stack %}
+                <div class="tech-stack">
+                    {% for tech in project.tech_stack %}
+                    <span class="tech-tag">{{ tech }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+            
+            <div class="project-content">
+                {{ project.content }}
+            </div>
+        </div>
+        {% endfor %}
+    </section>
+   </main>

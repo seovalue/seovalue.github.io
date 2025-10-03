@@ -1,0 +1,503 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.7;
+    color: #2d3748;
+    background-color: #ffffff;
+    font-weight: 400;
+}
+
+/* Links */
+a {
+    color: #4299e1;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #2b6cb0;
+    text-decoration: underline;
+}
+
+/* Inline code styling */
+code {
+    background-color: #f7fafc;
+    color: #2d3748;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-size: 0.9em;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    border: 1px solid #e2e8f0;
+}
+
+/* Container */
+.resume-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    min-height: 100vh;
+}
+
+/* Print Button */
+.print-button {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 1000;
+}
+
+.btn-print {
+    background: #2d3748;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(45, 55, 72, 0.15);
+}
+
+.btn-print:hover {
+    background: #1a202c;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(45, 55, 72, 0.2);
+}
+
+/* Header Section */
+.header {
+    background: #ffffff;
+    color: #2d3748;
+    padding: 4rem 2rem 3rem 2rem;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.header h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+    color: #1a202c;
+}
+
+.header .title {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #4a5568;
+    margin-bottom: 2rem;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #718096;
+}
+
+.contact-item i {
+    width: 16px;
+    text-align: center;
+    color: #a0aec0;
+}
+
+.contact-item a {
+    color: #4a5568;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.contact-item a:hover {
+    color: #2d3748;
+}
+
+/* Main Content */
+.content {
+    padding: 3rem 2rem;
+}
+
+/* Section Styles */
+.section {
+    margin-bottom: 4rem;
+}
+
+.section:last-child {
+    margin-bottom: 0;
+}
+
+.section-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #1a202c;
+    margin-bottom: 2rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #e2e8f0;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 40px;
+    height: 1px;
+    background: #2d3748;
+}
+
+/* About Section */
+.about-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #4a5568;
+    white-space: pre-line;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+}
+
+.about-text a {
+    color: #4299e1;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.about-text a:hover {
+    color: #2b6cb0;
+    text-decoration: underline;
+}
+
+.about-text code {
+    background-color: #f7fafc;
+    color: #2d3748;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-size: 0.85em;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    border: 1px solid #e2e8f0;
+}
+
+/* Experience Section */
+.experience-item {
+    margin-bottom: 1.5rem;
+    padding: 0;
+    background: transparent;
+    border-left: none;
+}
+
+.experience-header {
+    margin-bottom: 0.25rem;
+}
+
+.experience-company {
+    font-size: 1.2rem;
+    color: #1a202c;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.experience-duration {
+    font-size: 0.9rem;
+    color: #718096;
+    font-weight: 400;
+}
+
+.experience-description {
+    color: #4a5568;
+    line-height: 1.7;
+    white-space: pre-line;
+    margin-top: 0;
+}
+
+.experience-description ul {
+    margin-left: 1rem;
+}
+
+.experience-description li {
+    margin-bottom: 0.5rem;
+}
+
+.experience-description p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.experience-description p:first-child {
+    margin-top: 0;
+}
+
+.experience-description a {
+    color: #4299e1;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.experience-description a:hover {
+    color: #2b6cb0;
+    text-decoration: underline;
+}
+
+.experience-description code {
+    background-color: #f7fafc;
+    color: #2d3748;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-size: 0.85em;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    border: 1px solid #e2e8f0;
+}
+
+/* Projects Section */
+.project-item {
+    margin-bottom: 3rem;
+    padding: 0 0 3rem 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #f1f5f9;
+    border-radius: 0;
+    box-shadow: none;
+    transition: none;
+}
+
+.project-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.project-item:hover {
+    box-shadow: none;
+    transform: none;
+}
+
+.project-header {
+    margin-bottom: 1.5rem;
+}
+
+.project-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #1a202c;
+    margin-bottom: 0.5rem;
+}
+
+.project-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.project-company {
+    color: #2d3748;
+    font-weight: 500;
+}
+
+.project-duration {
+    color: #718096;
+    font-size: 0.9rem;
+}
+
+.project-summary {
+    color: #4a5568;
+    font-style: normal;
+    margin-bottom: 1rem;
+}
+
+.tech-stack {
+    margin-bottom: 1.5rem;
+    font-size: 0.85rem;
+    color: #718096;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.tech-tag {
+    display: inline;
+    background: transparent;
+    color: inherit;
+    padding: 0;
+    border-radius: 0;
+    font-size: inherit;
+    font-weight: 400;
+    font-style: inherit;
+    border: none;
+}
+
+.tech-tag:not(:last-child)::after {
+    content: ", ";
+    color: inherit;
+    font-style: inherit;
+}
+
+.project-content h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1a202c;
+    margin: 1.5rem 0 0.75rem 0;
+}
+
+.project-content h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1a202c;
+    margin: 1.5rem 0 0.75rem 0;
+    padding: 0.2rem 0.5rem;
+    background: linear-gradient(120deg, #fef3c7 0%, #fef3c7 100%);
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+    background-position: 0 85%;
+    display: inline-block;
+    line-height: 1.4;
+}
+
+.project-content p {
+    color: #4a5568;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.project-content a {
+    color: #4299e1;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.project-content a:hover {
+    color: #2b6cb0;
+    text-decoration: underline;
+}
+
+.project-content code {
+    background-color: #f7fafc;
+    color: #2d3748;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-size: 0.85em;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    border: 1px solid #e2e8f0;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+}
+
+.skill-category {
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+}
+
+.skill-category h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #4a5568;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.skill-item {
+    margin-bottom: 1rem;
+}
+
+.skill-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.4rem;
+}
+
+.skill-name span:first-child {
+    font-weight: 400;
+    color: #4a5568;
+    font-size: 0.9rem;
+}
+
+.skill-name span:last-child {
+    font-size: 0.75rem;
+    color: #a0aec0;
+}
+
+.skill-bar {
+    height: 2px;
+    background: #f1f5f9;
+    border-radius: 1px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background: #cbd5e0;
+    border-radius: 1px;
+    transition: width 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resume-container {
+        margin: 0;
+    }
+    
+    .header {
+        padding: 3rem 1.5rem 2rem 1.5rem;
+    }
+    
+    .header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .content {
+        padding: 2rem 1.5rem;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .experience-header {
+        margin-bottom: 0.25rem;
+    }
+    
+    .project-meta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .print-button {
+        position: static;
+        text-align: center;
+        margin: 1rem;
+    }
+}

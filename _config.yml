@@ -1,0 +1,135 @@
+# Site settings
+title: "서민정"
+email: "seominjeong.dev@gmail.com"
+description: >-
+  Server Engineer
+baseurl: ""
+url: "https://www.linkedin.com/in/seominjeong"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Collections
+collections:
+  projects:
+    output: false
+
+# Personal information
+name: "서민정 (SEO MIN JEONG)"
+title_position: "Server Engineer"
+location: "서울"
+github: "seovalue"
+linkedin: "seominjeong"
+blog: "https://medium.com/@seominjeong.dev"
+
+# About section
+about: |
+  3년 이상의 서버 개발 경험을 바탕으로 확장 가능하고 안정적인 백엔드 시스템을 구축하는 개발자입니다.
+  `Java`, `Kotlin`, `Spring Boot`를 주력으로 사용하며, 대용량 트래픽 처리와 시스템 성능 최적화에 관심이 많습니다.
+  `LLM` 활용, 위치 기반 서비스, 사장님향 비즈니스 도구 개발 경험을 보유하고 있으며, 사용자 경험을 개선하는 기술적 솔루션을 제공합니다.
+  
+  기술 블로그: [Medium](https://medium.com/@seominjeong.dev)
+
+# Experience
+experience:
+  - company: "당근"
+    duration: "2025.04 - 현재"
+    description: |
+      • 만보기, 보물상자 열기, 동네가게 퀴즈, 집 반경 맞추기 등 개발 
+
+  - company: "당근"
+    duration: "2024.09 - 2025.03"
+    description: |
+      • LocalMaps UGC, LocalMaps Engagement 개발
+      • UGC(User Generated Contents) 성과 알림 기능 개발
+      • UGC 기여 기반 랭킹 및 소셜캐피탈(당근모으기) 시스템 구축
+      • 유저 UGC 제안 및 검수 플로우 개발
+      • `LLM`을 활용한 UGC 평가 및 보상 시스템 구현
+      • 장소 제안 시 LLM 이미지 분석을 통한 장소 추천 기능
+      • 기술 블로그: [MVP를 빠르고 효과적으로 개발하기](https://medium.com/daangn/mvp를-빠르고-효과적으로-개발하기-우리는-협업해요-dc481bd03b88)
+
+  - company: "당근"
+    duration: "2023.09 - 2024.08"
+    description: |
+      • 비즈리뷰팀 - 가게 후기 기능 전반 개발
+      • 별점 기능 및 전환 기반 후기 유도 시스템 구축
+      • 유저와 가게 간 Interaction Pool 개발
+      • 채팅을 통한 후기 작성 유도 기능 개발
+
+  - company: "당근"
+    duration: "2022.03 - 2023.10"
+    description: |
+      • 비즈프로필, 사장님경험팀 - 사장님향 비즈 기능 서버 개발
+      • 사장님향 알림 도구(CRM) 개발
+      • 가게 프로필 기능 및 온보딩 플로우 구축
+      • 가게 프로필 정보 채우기 유도 퀘스트 시스템 개발
+      • 영업시간 등 가게 정보 관리 기능 개발
+ 
+  - company: "당근"
+    duration: "2022.01 - 2022.02"
+    description: |
+      • 비즈프로필 도구 개발 (인턴)
+
+  - company: "우아한형제들"
+    duration: "2021.02 - 2021.11"
+    description: |
+      • 우아한테크코스 3기 백엔드 과정 수료
+      • `Spring Boot`, `Java`를 활용한 백엔드 엔지니어 교육
+      • 팀 프로젝트 '보고 또 보고' 개발 - 취준생/학생 반복 학습 서비스
+      • 퀴즈 등록 및 블라인드 면접 연습 기능 구현
+      • 기술 스택: `Spring Boot`, `Java`, `MariaDB`
+      • 프로젝트: [GitHub Repository](https://github.com/woowacourse-teams/2021-botobo)
+
+# Skills
+skills:
+  - category: "Backend"
+    items:
+      - name: "Java"
+        level: 90
+      - name: "Kotlin"
+        level: 85
+      - name: "Spring Boot"
+        level: 85
+      - name: "Spring Framework"
+        level: 80
+      - name: "JPA/Hibernate"
+        level: 75
+
+  - category: "Database"
+    items:
+      - name: "MySQL"
+        level: 80
+      - name: "MariaDB"
+        level: 75
+      - name: "Redis"
+        level: 70
+      - name: "PostgreSQL"
+        level: 65
+
+  - category: "DevOps & Tools"
+    items:
+      - name: "Git"
+        level: 85
+      - name: "Docker"
+        level: 75
+      - name: "AWS"
+        level: 70
+      - name: "Jenkins"
+        level: 65
+      - name: "Gradle"
+        level: 80
